@@ -32,6 +32,18 @@ public static void main(String [] args) {
 	//verifico funzionamento
 	System.out.println(newProdotto.fullName);
 	
+	
+	//creo nuova istanza prodotto per prezzo dafault
+	Prodotto newProdotto2 = new Prodotto();
+	
+	newProdotto2.name = "AppleWatch-2th-Gen";
+	newProdotto2.description = "The ultimate smartest SmartWatch in the World, with the lastest tchnologies"
+			+ " witht this new Generation";
+	System.out.println(newProdotto2.price);
+	newProdotto2.getDefaultPrice();
+	//uso metodo prezzo default
+	System.out.println(newProdotto2.price);
+
 }
 
 

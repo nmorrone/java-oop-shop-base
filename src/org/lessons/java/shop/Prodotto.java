@@ -37,11 +37,17 @@ double priceCalculator (double price, double iva) {
 	fullPrice = price + iva;
 	return fullPrice;
 }
-
+//metodo nome + codice
 String getName(String code, String name) {
 	
 	fullName = code + "-" + name;
 	return fullName;
 }
+
+//metodo prezzo default
+double getDefaultPrice() {
+			price = 1.0;
+			return price;
+	}
 
 }
