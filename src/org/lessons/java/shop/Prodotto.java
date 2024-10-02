@@ -14,12 +14,10 @@ public class Prodotto {
 
 
 //creo metodo per assegnare un codice random di tot cifre ad un prodotto
-int generatoreCodice() {
+void generatoreCodice() {
 	Random generatore = new Random();
+	code = generatore.nextInt(1 + 100000);
 
-	int uniqueCode = generatore.nextInt(1+ 100000);
-	code = uniqueCode;
-	return code;
 }
 
 //definisco il metodo per calcolare l'iva
