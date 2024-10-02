@@ -8,7 +8,7 @@ public static void main(String [] args) {
 	
 	Prodotto newProdotto = new Prodotto();
 	
-	newProdotto.name = "Airpod Pro 3th gen";
+	newProdotto.name = "AirpodsPro-3th-Gen";
 	newProdotto.description = "Wireless professional in-ear speakers for iphone and ios devices, 3th generation with the last and modern utilities";
 	newProdotto.price = 299.00;
 	
@@ -26,7 +26,14 @@ public static void main(String [] args) {
 	newProdotto.priceCalculator(newProdotto.price, newProdotto.iva);
 	//verifico funzionamento
 	System.out.println(newProdotto.fullPrice);
+	
+	//metodo fullname
+	newProdotto.getName(String.valueOf(newProdotto.code), newProdotto.name);
+	//verifico funzionamento
+	System.out.println(newProdotto.fullName);
+	
 }
+
 
 
 }

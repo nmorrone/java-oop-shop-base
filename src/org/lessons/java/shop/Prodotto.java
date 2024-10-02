@@ -10,6 +10,7 @@ public class Prodotto {
 			double price;
 			double iva = (price * 22) / 100;
 			double fullPrice;
+			String fullName;
 
 Random generatore = new Random();
 
@@ -35,6 +36,12 @@ double priceCalculator (double price, double iva) {
 	
 	fullPrice = price + iva;
 	return fullPrice;
+}
+
+String getName(String code, String name) {
+	
+	fullName = code + "-" + name;
+	return fullName;
 }
 
 }
