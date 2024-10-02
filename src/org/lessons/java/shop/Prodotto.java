@@ -12,10 +12,11 @@ public class Prodotto {
 			double fullPrice;
 			String fullName;
 
-Random generatore = new Random();
 
 //creo metodo per assegnare un codice random di tot cifre ad un prodotto
 int generatoreCodice() {
+	Random generatore = new Random();
+
 	int uniqueCode = generatore.nextInt(1+ 100000);
 	code = uniqueCode;
 	return code;
