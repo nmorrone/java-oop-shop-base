@@ -43,6 +43,10 @@ public static void main(String [] args) {
 	newProdotto2.getDefaultPrice();
 	//uso metodo prezzo default
 	System.out.println(newProdotto2.price);
+	
+	//testo valori default costruttore
+	ProdottoFixed newProdotto3 = new ProdottoFixed();
+	System.out.println(newProdotto3.fullName);
 
 }
 
